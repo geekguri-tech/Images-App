@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +11,121 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.layout{
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: min-content;
+}
+
+.gridct{
+  grid-column-start: 2;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: min-content 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cpname{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  font-family: 'Silkscreen', sans-serif;
+  background-color:#00539C;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end:4;
+  height: 50px;
+}
+
+.lpicsumone{
+  grid-row-start:2;
+  grid-row-end:4;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.lpicsumtwo{
+  grid-row-start:2;
+  grid-row-end:4;
+  grid-column-start: 2;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.lpicsumthree{
+  grid-row-start:2;
+  grid-row-end:4;
+  grid-column-start: 3;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.lpicsum{
+  border-radius:80px;
+  padding:10px;
+  transition:all 5s ease-in-out ;
+}
+
+.lpicsum:hover{
+  transform:scale(0.9) rotate(-360deg);
+  padding: 20px;
+}
+
+.butfl{
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.but{
+  font-size: 1em;
+  padding-top: 0;
+  background-color: #00539C;
+  color:white;
+  border: none;
+  width:150px;
+  height: 50px;
+  transition: all 0.5s ease-in-out;
+  font-family: 'Silkscreen', sans-serif;
+}
+
+.leftbar{
+  width: 150px;
+  height: 600px;
+  background-color: #00539C;
+  color: white;
+  display: grid;
+  transition: all 0.8s ease-in-out;
+}
+
+.leftbarex{
+  width: 210px;
+  height: 600px;
+  background-color: #00539C;
+  color:white;
+  display: grid;
+  margin-left: -150px;
+  transition: all 0.8s ease-in-out;;
+}
+
+.one{
+  transition: all 0.5s ease-in-out;
+  font-family: 'Silkscreen', sans-serif;
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.one:hover{
+  font-size: 20px;
+  background-color:#EEA47F;
+  color: white;
+}
+
+.one:hover:last-child{
+  font-size: 20px;
+  background-color:#EEA47F;
+  color: white;
 }
